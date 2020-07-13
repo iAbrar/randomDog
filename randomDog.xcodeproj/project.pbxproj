@@ -13,6 +13,9 @@
 		88AA60C724B84F0C00662521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88AA60C624B84F0C00662521 /* Assets.xcassets */; };
 		88AA60CA24B84F0C00662521 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88AA60C824B84F0C00662521 /* LaunchScreen.storyboard */; };
 		88AA60D524B84F0C00662521 /* randomDogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AA60D424B84F0C00662521 /* randomDogTests.swift */; };
+		88AA60E324B850FE00662521 /* DogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AA60E224B850FE00662521 /* DogAPI.swift */; };
+		88AA60E524B8576B00662521 /* DogImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AA60E424B8576B00662521 /* DogImage.swift */; };
+		88AA60E724BAF14100662521 /* BreedsListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AA60E624BAF14100662521 /* BreedsListResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		88AA60D024B84F0C00662521 /* randomDogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = randomDogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88AA60D424B84F0C00662521 /* randomDogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomDogTests.swift; sourceTree = "<group>"; };
 		88AA60D624B84F0C00662521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88AA60E224B850FE00662521 /* DogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPI.swift; sourceTree = "<group>"; };
+		88AA60E424B8576B00662521 /* DogImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImage.swift; sourceTree = "<group>"; };
+		88AA60E624BAF14100662521 /* BreedsListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +83,9 @@
 		88AA60BE24B84F0600662521 /* randomDog */ = {
 			isa = PBXGroup;
 			children = (
-				88AA60BF24B84F0600662521 /* AppDelegate.swift */,
-				88AA60C124B84F0600662521 /* ViewController.swift */,
-				88AA60C324B84F0600662521 /* Main.storyboard */,
-				88AA60C624B84F0C00662521 /* Assets.xcassets */,
-				88AA60C824B84F0C00662521 /* LaunchScreen.storyboard */,
+				88AA60E124B850DA00662521 /* Model */,
+				88AA60E024B84FAD00662521 /* Controller */,
+				88AA60DF24B84F9900662521 /* View */,
 				88AA60CB24B84F0C00662521 /* Info.plist */,
 			);
 			path = randomDog;
@@ -94,6 +98,35 @@
 				88AA60D624B84F0C00662521 /* Info.plist */,
 			);
 			path = randomDogTests;
+			sourceTree = "<group>";
+		};
+		88AA60DF24B84F9900662521 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88AA60C324B84F0600662521 /* Main.storyboard */,
+				88AA60C624B84F0C00662521 /* Assets.xcassets */,
+				88AA60C824B84F0C00662521 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88AA60E024B84FAD00662521 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				88AA60BF24B84F0600662521 /* AppDelegate.swift */,
+				88AA60C124B84F0600662521 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		88AA60E124B850DA00662521 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88AA60E224B850FE00662521 /* DogAPI.swift */,
+				88AA60E424B8576B00662521 /* DogImage.swift */,
+				88AA60E624BAF14100662521 /* BreedsListResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +232,9 @@
 			files = (
 				88AA60C224B84F0600662521 /* ViewController.swift in Sources */,
 				88AA60C024B84F0600662521 /* AppDelegate.swift in Sources */,
+				88AA60E724BAF14100662521 /* BreedsListResponse.swift in Sources */,
+				88AA60E524B8576B00662521 /* DogImage.swift in Sources */,
+				88AA60E324B850FE00662521 /* DogAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
